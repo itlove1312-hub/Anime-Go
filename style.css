@@ -1,0 +1,142 @@
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    font-family:Arial;
+    background:#0b0b0f;
+    color:white;
+}
+
+header{
+    background:linear-gradient(90deg,#ff004c,#7a00ff);
+    padding:20px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    justify-content:center;
+    align-items:center;
+    box-shadow:0 0 20px #000;
+}
+
+header h1{
+    margin:0;
+    font-size:28px;
+}
+
+input,select{
+    padding:10px;
+    border:none;
+    border-radius:6px;
+}
+
+#app{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(200px,1fr));
+    gap:25px;
+    padding:30px;
+}
+
+.card{
+    background:#14141c;
+    border-radius:12px;
+    overflow:hidden;
+    transition:0.3s;
+    position:relative;
+    box-shadow:0 0 15px rgba(0,0,0,0.5);
+}
+
+.card:hover{
+    transform:translateY(-10px) scale(1.03);
+    box-shadow:0 0 25px #7a00ff;
+}
+
+.card img{
+    width:100%;
+    height:280px;
+    object-fit:cover;
+}
+
+.card h3{
+    margin:10px;
+    font-size:18px;
+}
+
+.rating{
+    margin-left:10px;
+    color:gold;
+    font-size:14px;
+}
+
+.watch{
+    background:linear-gradient(90deg,#ff004c,#7a00ff);
+    border:none;
+    color:white;
+    padding:10px;
+    cursor:pointer;
+    width:100%;
+    font-weight:bold;
+}
+
+.fav{
+    position:absolute;
+    top:10px;
+    right:10px;
+    background:#000;
+    width:35px;
+    height:35px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    cursor:pointer;
+    font-size:18px;
+}
+
+.player{
+    max-width:900px;
+    margin:auto;
+    padding:30px;
+    text-align:center;
+}
+
+iframe{
+    width:100%;
+    height:500px;
+    border:none;
+    border-radius:10px;
+    box-shadow:0 0 20px #000;
+}
+
+.episodes{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    justify-content:center;
+    margin-top:20px;
+}
+
+.episodes button{
+    background:#1c1c26;
+    border:none;
+    color:white;
+    padding:10px 15px;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+.episodes button:hover{
+    background:#7a00ff;
+}
+
+.back{
+    margin-top:25px;
+    padding:12px 25px;
+    border:none;
+    border-radius:6px;
+    background:linear-gradient(90deg,#ff004c,#7a00ff);
+    color:white;
+    cursor:pointer;
+}
+
